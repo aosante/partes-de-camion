@@ -36,6 +36,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     setShrink(scrollTop > 100);
   }, []);
   useWindowOnScroll(handleWindowScroll);
+  console.log(imageFileName);
 
   return (
     <Navbar
@@ -46,7 +47,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     >
       <Container>
         <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
-          <Image className="img-fluid logo" fileName={imageFileName} alt="Company Logo" />
+          <Image className="img-fluid logo" fileName={imageFileName} alt="Company Log" />
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
           {menuText}

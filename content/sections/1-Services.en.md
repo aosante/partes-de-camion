@@ -1,10 +1,10 @@
 ---
 anchor: "Services"
-header: "Services"
+header: "What do we offer?"
 subheader: "Lorem ipsum dolor sit amet consectetur."
 services: [
   {
-    iconName: "ShoppingCartIcon",
+    iconName: "TruckIcon",
     header: "E-Commerce",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
   },

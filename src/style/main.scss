@@ -5,6 +5,7 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  background-color: $gray-800;
 }
 
 p {
@@ -29,6 +30,10 @@ h6 {
   &:hover {
     cursor: pointer;
   }
+}
+
+.yellow-text {
+  color: $yellow;
 }
 
 // Highlight color customization

@@ -32,7 +32,7 @@ const TimelineItem = ({
         )}
       </div>
       <div className="timeline-panel">
-        <div className="timeline-heading">
+        <div className="timeline-heading yellow-text">
           {headerPart}
           {subheaderPart}
         </div>

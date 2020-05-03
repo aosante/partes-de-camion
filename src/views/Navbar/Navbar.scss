@@ -39,6 +39,9 @@
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      .logo {
+        width: 150px;
+      }
     }
     &.navbar-shrink {
       padding-top: 0;

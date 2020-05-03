@@ -22,7 +22,7 @@ const Footer = ({ frontmatter }) => {
     <footer className="footer py-3">
       <Container>
         <Row className="align-items-center text-center">
-          <Col lg={5} className="text-lg-left">
+          <Col lg={5} className="text-lg-left yellow-text">
             {copyright}
           </Col>
           <Col lg={3} className="my-3 my-lg-0">

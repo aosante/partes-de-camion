@@ -36,7 +36,6 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     setShrink(scrollTop > 100);
   }, []);
   useWindowOnScroll(handleWindowScroll);
-  console.log(imageFileName);
 
   return (
     <Navbar

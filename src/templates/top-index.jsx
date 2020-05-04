@@ -139,7 +139,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
           return SectionComponent ? (
             <SectionComponent
               key={sectionComponentName}
-              className={ind % 2 === 1 ? "bg-light" : null}
+              className={ind % 2 === 1 ? "bg-yellow" : null}
               frontmatter={frontmatter}
             />
           ) : null;

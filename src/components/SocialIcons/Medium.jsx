@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 
 import CircleIcon from "components/CircleIcon";
 
-const Medium = ({ userName }) => (
-  <CircleIcon href={`https://medium.com/@${userName}`} iconName="MediumIcon" />
+const Medium = ({ userName, isYellow }) => (
+  <CircleIcon href={`https://medium.com/@${userName}`} isYellow={isYellow} iconName="MediumIcon" />
 );
 
 Medium.propTypes = {
   userName: PropTypes.string.isRequired,
+  isYellow: PropTypes.bool.isRequired,
 };
 
 export default Medium;

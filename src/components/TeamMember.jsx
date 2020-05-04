@@ -13,11 +13,15 @@ const TeamMember = ({
   subheader,
   social: { twitter, facebook, linkedin, github, medium },
 }) => {
-  const twitterPart = twitter ? <SocialIcons.Twitter userName={twitter} /> : null;
-  const facebookPart = facebook ? <SocialIcons.Facebook userName={facebook} /> : null;
-  const linkedinPart = linkedin ? <SocialIcons.Linkedin userName={linkedin} /> : null;
-  const githubPart = github ? <SocialIcons.Github userName={github} /> : null;
-  const mediumPart = medium ? <SocialIcons.Medium userName={medium} /> : null;
+  const twitterPart = twitter ? <SocialIcons.Twitter userName={twitter} isYellow={false} /> : null;
+  const facebookPart = facebook ? (
+    <SocialIcons.Facebook userName={facebook} isYellow={false} />
+  ) : null;
+  const linkedinPart = linkedin ? (
+    <SocialIcons.Linkedin userName={linkedin} isYellow={false} />
+  ) : null;
+  const githubPart = github ? <SocialIcons.Github userName={github} isYellow={false} /> : null;
+  const mediumPart = medium ? <SocialIcons.Medium userName={medium} isYellow={false} /> : null;
 
   return (
     <div className="team-member">

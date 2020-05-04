@@ -10,11 +10,20 @@
   color: white;
   border-radius: 100%;
   outline: none;
+  background-color: $gray-900;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $gray-900;
+    color: white;
+  }
+}
+
+.is-yellow {
   background-color: $primary;
   &:active,
   &:focus,
   &:hover {
     background-color: $primary;
-    color: white;
   }
 }

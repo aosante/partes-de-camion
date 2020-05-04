@@ -18,7 +18,7 @@ const Portfolio = ({ className, frontmatter }) => {
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
       <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        <SectionHeader header={rootHeader} isYellow={false} subheader={rootSubHeader} />
       </Row>
       <Row>
         {portfolios.map(

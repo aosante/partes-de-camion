@@ -4,9 +4,9 @@ import Icon from "components/Icon";
 
 import "./CircleIcon.scss";
 
-const CircleIcon = ({ href, iconName }) => (
+const CircleIcon = ({ href, iconName, isYellow }) => (
   <a
-    className="circle-icon"
+    className={`circle-icon ${isYellow && "is-yellow"}`}
     href={href}
     target="_blank"
     rel="noopener noreferrer"
@@ -19,6 +19,7 @@ const CircleIcon = ({ href, iconName }) => (
 CircleIcon.propTypes = {
   href: PropTypes.string,
   iconName: PropTypes.string,
+  isYellow: PropTypes.bool.isRequired,
 };
 
 CircleIcon.defaultProps = {

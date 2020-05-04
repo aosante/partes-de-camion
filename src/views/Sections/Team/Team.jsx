@@ -23,7 +23,7 @@ const Team = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchor}>
       <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        <SectionHeader header={rootHeader} isYellow={false} subheader={rootSubHeader} />
       </Row>
       <Row>
         {teamMember.map(({ header, ...tmProps }) => (

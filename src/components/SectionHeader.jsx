@@ -5,14 +5,14 @@ import clsx from "clsx";
 import { Col } from "react-bootstrap";
 import "./SectionHeader.scss";
 
-const SectionHeader = ({ header, subheader, className, ...restProps }) => {
+const SectionHeader = ({ header, subheader, className, isYellow, ...restProps }) => {
   const subheaderPart = subheader ? (
-    <h3 className="section-subheading text-muted">{subheader}</h3>
+    <h3 className={`section-subheading ${isYellow && "text-muted"}`}>{subheader}</h3>
   ) : null;
 
   return (
     <Col lg={12} className={clsx("section-header", "text-center", className)} {...restProps}>
-      <h2 className="section-heading text-uppercase yellow-text">{header}</h2>
+      <h2 className={`section-heading text-uppercase ${isYellow && "yellow-text"}`}>{header}</h2>
       {subheaderPart}
     </Col>
   );
@@ -22,6 +22,7 @@ SectionHeader.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   className: PropTypes.string,
+  isYellow: PropTypes.bool.isRequired,
 };
 
 SectionHeader.defaultProps = {

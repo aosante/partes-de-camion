@@ -19,7 +19,7 @@ const About = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchor}>
       <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        <SectionHeader header={rootHeader} isYellow={true} subheader={rootSubHeader} />
       </Row>
       <Row>
         <Col lg={12}>

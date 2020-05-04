@@ -26,11 +26,11 @@ const Footer = ({ frontmatter }) => {
             {copyright}
           </Col>
           <Col lg={3} className="my-3 my-lg-0">
-            {twitter ? <SocialIcons.Twitter userName={twitter} /> : null}
-            {facebook ? <SocialIcons.Facebook userName={facebook} /> : null}
-            {linkedin ? <SocialIcons.Linkedin userName={linkedin} /> : null}
-            {github ? <SocialIcons.Github userName={github} /> : null}
-            {medium ? <SocialIcons.Medium userName={medium} /> : null}
+            {twitter ? <SocialIcons.Twitter userName={twitter} isYellow={true} /> : null}
+            {facebook ? <SocialIcons.Facebook userName={facebook} isYellow={true} /> : null}
+            {linkedin ? <SocialIcons.Linkedin userName={linkedin} isYellow={true} /> : null}
+            {github ? <SocialIcons.Github userName={github} isYellow={true} /> : null}
+            {medium ? <SocialIcons.Medium userName={medium} isYellow={true} /> : null}
           </Col>
           <Col lg={4} className="text-lg-right">
             <a className="mr-3" href={privacyHref}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 
 import { Col } from "react-bootstrap";
@@ -18,11 +18,11 @@ const PortfolioItem = ({
   imageAltDetail,
   extraInfo,
 }) => {
-  const [showDetail, setShowDetail] = React.useState(false);
-  const handleShowDetail = React.useCallback(() => {
+  const [showDetail, setShowDetail] = useState(false);
+  const handleShowDetail = useCallback(() => {
     setShowDetail(true);
   }, []);
-  const handleHideDetail = React.useCallback(() => {
+  const handleHideDetail = useCallback(() => {
     setShowDetail(false);
   }, []);
 

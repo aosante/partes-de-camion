@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 
 import clsx from "clsx";
@@ -18,20 +18,20 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
-  const [expanded, setExpanded] = React.useState(false);
-  const toggleMenu = React.useCallback(() => {
+  const [expanded, setExpanded] = useState(false);
+  const toggleMenu = useCallback(() => {
     setExpanded(!expanded);
   }, [expanded]);
-  const closeMenu = React.useCallback(() => {
+  const closeMenu = useCallback(() => {
     setExpanded(false);
   }, []);
-  const handleBrandClick = React.useCallback(() => {
+  const handleBrandClick = useCallback(() => {
     closeMenu();
     handleScrollToTop();
   }, [closeMenu, handleScrollToTop]);
 
-  const [shrink, setShrink] = React.useState(false);
-  const handleWindowScroll = React.useCallback(() => {
+  const [shrink, setShrink] = useState(false);
+  const handleWindowScroll = useCallback(() => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     setShrink(scrollTop > 100);
   }, []);

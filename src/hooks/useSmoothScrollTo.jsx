@@ -1,4 +1,4 @@
-import React from "react";
+import { useCallback } from "react";
 
 import { scroller, animateScroll } from "react-scroll";
 
@@ -9,7 +9,7 @@ const DefOptions = {
 const useSmoothScrollTo = (anchorOrPosition, options = {}) => {
   const opts = { ...DefOptions, ...options };
 
-  const handleScrollTo = React.useCallback(() => {
+  const handleScrollTo = useCallback(() => {
     switch (typeof anchorOrPosition) {
       case "number":
       case "bigint":

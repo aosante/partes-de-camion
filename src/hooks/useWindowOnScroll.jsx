@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
 import { throttle } from "throttle-debounce";
 
 const useWindowOnScroll = (handleWindowScroll, loadOnceOnMount = true) => {
-  const internalHandleScroll = React.useMemo(() => {
+  const internalHandleScroll = useMemo(() => {
     // 166 -> 60HZ
     return handleWindowScroll ? throttle(166, handleWindowScroll) : handleWindowScroll;
   }, [handleWindowScroll]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (internalHandleScroll == null) {
       return undefined;
     }
@@ -19,7 +19,7 @@ const useWindowOnScroll = (handleWindowScroll, loadOnceOnMount = true) => {
     };
   }, [internalHandleScroll]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (loadOnceOnMount) {
       handleWindowScroll();
     }

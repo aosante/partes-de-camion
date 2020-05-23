@@ -1,23 +1,23 @@
 ---
 anchor: "Servicios"
 header: "¿Qué ofrecemos?"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "Conozca nuestros servicios"
 services:
   [
     {
+      iconName: "ServiceIcon",
+      header: "Servicio al Cliente",
+      content: "El servicio al cliente es lo que nos mueve. Sabemos que no solo se trata de precio y calidad, por lo que el cliente y todas sus necesidades siempre están en mente.",
+    },
+    {
+      iconName: "QualityIcon",
+      header: "Calidad",
+      content: "Sabemos que el mínimo sacrificio de la calidad de un repuesto es costoso tanto para nosotros como para el cliente. Solamente ofrecemos productos que pensamos tiene el mejor balance en costo-beneficio.",
+    },
+    {
       iconName: "TruckIcon",
-      header: "E-Commerce",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
-    },
-    {
-      iconName: "LaptopIcon",
-      header: "Diseño Responsivo",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
-    },
-    {
-      iconName: "LockIcon",
-      header: "Seguridad Web",
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+      header: "Cobertura",
+      content: "Hacemos entregas a lo largo y ancho de todo el país. La variedad y cantidad requerida, en el lugar y tiempo requeridos.",
     },
   ]
 ---

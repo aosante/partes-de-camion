@@ -52,6 +52,7 @@ jobs:
 
   deploy:
     executor: node
+    environment: test
     steps:
       - checkout
       - attach_workspace:

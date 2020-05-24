@@ -52,9 +52,6 @@ jobs:
 
   deploy:
     executor: node
-    environment: test
-      NETLIFY_SITE_ID: 68d258ae-57f4-4a2c-85fe-1c4b2109783d
-      NETLIFY_ACCESS_TOKEN: 99031f4c7ac9482b795b29ddb9db1159ce53c7de4757c372b5bd16c163c5b805
     steps:
       - checkout
       - attach_workspace:
@@ -66,7 +63,7 @@ jobs:
           command: sudo npm install -g --silent netlify-cli
       - run:
           name: Deploy to Netlify
-          command: netlify deploy --dir=./public -p --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN
+          command: netlify deploy --dir /public --auth $NETLIFY_ACCESS_TOKEN --site $NETLIFY_SITE_ID
 
 workflows:
   version: 2

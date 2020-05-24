@@ -47,7 +47,6 @@ jobs:
     environment:
       NETLIFY_SITE_ID: YOUR_NETLIFY_SITE_ID
       NETLIFY_ACCESS_TOKEN: A_NETLIFY_ACCESS_TOKEN
-    working_directory: ~/repo
     steps:
       - gatsby-build
       - run:

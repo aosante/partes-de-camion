@@ -74,4 +74,4 @@ yarn-error.log
 # Local Netlify folder
 .netlify
 
-.circleci
+.circleci/config.yml

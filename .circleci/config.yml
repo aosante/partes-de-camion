@@ -53,6 +53,8 @@ jobs:
   deploy:
     executor: node
     environment: test
+      NETLIFY_SITE_ID: 68d258ae-57f4-4a2c-85fe-1c4b2109783d
+      NETLIFY_ACCESS_TOKEN: 99031f4c7ac9482b795b29ddb9db1159ce53c7de4757c372b5bd16c163c5b805
     steps:
       - checkout
       - attach_workspace:

@@ -10,7 +10,6 @@ const PortfolioDetailDialog = ({
   imageFileName,
   imageAlt,
   header,
-  subheader,
   content,
   extraInfo,
   ...restProps
@@ -27,12 +26,7 @@ const PortfolioDetailDialog = ({
         <Modal.Title id="contained-modal-title-vcenter">{header}</Modal.Title>
       </Modal.Header>
       <Modal.Body className="mx-auto">
-        <p className="item-intro text-muted">{subheader}</p>
-        <Image
-          className="img-fluid d-block"
-          fileName={imageFileName}
-          alt={imageAlt || header || subheader}
-        />
+        <Image className="img-fluid d-block" fileName={imageFileName} alt={imageAlt || header} />
         <p>{content}</p>
         {extraInfo}
       </Modal.Body>
@@ -40,7 +34,7 @@ const PortfolioDetailDialog = ({
         <div className="mx-auto">
           <Button variant="primary" onClick={onHide}>
             <Icon iconName="CloseIcon" />
-            &nbsp; Close Project
+            &nbsp;
           </Button>
         </div>
       </Modal.Footer>
@@ -53,7 +47,6 @@ PortfolioDetailDialog.propTypes = {
   imageFileName: PropTypes.string,
   imageAlt: PropTypes.string,
   header: PropTypes.string,
-  subheader: PropTypes.string,
   content: PropTypes.string,
   extraInfo: PropTypes.any,
 };
@@ -63,7 +56,6 @@ PortfolioDetailDialog.defaultProps = {
   imageFileName: "",
   imageAlt: null,
   header: "",
-  subheader: "",
   content: "",
   extraInfo: null,
 };

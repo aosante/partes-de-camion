@@ -21,25 +21,22 @@ const Portfolio = ({ className, frontmatter }) => {
         <SectionHeader header={rootHeader} isYellow={false} subheader={rootSubHeader} />
       </Row>
       <Row>
-        {portfolios.map(
-          ({ content, extraInfo, header, imageFileName, imageFileNameDetail, subheader }) => (
-            <PortfolioItem
-              key={header}
-              imageFileName={imageFileName}
-              header={header}
-              subheader={subheader}
-              content={content}
-              imageFileNameDetail={imageFileNameDetail}
-              extraInfo={
-                <ul>
-                  {extraInfo.map((ei) => (
-                    <li key={ei}>{ei}</li>
-                  ))}
-                </ul>
-              }
-            />
-          ),
-        )}
+        {portfolios.map(({ content, extraInfo, header, imageFileName, imageFileNameDetail }) => (
+          <PortfolioItem
+            key={header}
+            imageFileName={imageFileName}
+            header={header}
+            content={content}
+            imageFileNameDetail={imageFileNameDetail}
+            extraInfo={
+              <ul>
+                {extraInfo.map((ei) => (
+                  <li key={ei}>{ei}</li>
+                ))}
+              </ul>
+            }
+          />
+        ))}
       </Row>
     </PageSection>
   );

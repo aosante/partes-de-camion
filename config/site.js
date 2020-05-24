@@ -13,7 +13,7 @@ module.exports = {
   description:
     "Partes de Camión S.A. representante exclusivo de Kenworth en Costa Rica. Calidad garantizada en nuestro taller de Servicio Premier Kenworth.",
   author: "Andrés Osante",
-  trackingId: "UA-119418003-5",
+  trackingId: "",
   defaultLang: "es",
   langTextMap: {
     en: "English",

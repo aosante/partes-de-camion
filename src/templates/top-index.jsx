@@ -50,7 +50,6 @@ export const query = graphql`
             content
             extraInfo
             header
-            subheader
             imageFileNameDetail
             imageFileName
           }
@@ -122,7 +121,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="" keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}

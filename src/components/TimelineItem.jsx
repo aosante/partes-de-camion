@@ -24,11 +24,12 @@ const TimelineItem = ({
     <li className={liClassName}>
       <div className="timeline-image">
         {imageContent || (
-          <Image
-            className="rounded-circle img-fluid"
-            fileName={imageFileName}
-            alt={imageAlt || header || subheader}
-          />
+          <div />
+          // <Image
+          //   className="rounded-circle img-fluid"
+          //   fileName={imageFileName}
+          //   alt={imageAlt || header || subheader}
+          // />
         )}
       </div>
       <div className="timeline-panel">

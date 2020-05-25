@@ -1,6 +1,6 @@
 ---
-copyright: "Copyright © Start Bootstrap 2020"
-social: { twitter: "#", facebook: "#", medium: "#" }
+copyright: "Copyright © Partes de Camión S.A."
+social: { linkedin: "#", facebook: "#", }
 privacyText: "Poliza de privacidad"
 privacyHref: "#!"
 termsText: "Términos de uso"

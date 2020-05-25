@@ -1,7 +1,7 @@
 ---
 anchor: "Nosotros"
 header: "Nosotros"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "La trayectoria de Partes de Camión"
 timeline:
   [
     {
@@ -25,7 +25,7 @@ timeline:
     {
       imageFileName: "about/4.jpg",
       header: "July 2014",
-      subheader: "Fase dos de la expanción",
+      subheader: "Hoy",
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
     },
     { imageContent: "¡Sé parte\r\nde nuestra\r\nhistoria!" },

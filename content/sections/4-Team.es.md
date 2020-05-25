@@ -7,21 +7,22 @@ teamMember:
   [
     {
       imageFileName: "team/1.jpg",
-      header: "Kay Garland",
-      subheader: "Diseño",
-      social: { twitter: "#", facebook: "#", linkedin: "#" },
+      header: "Julián Osante",
+      subheader: "",
+      social: { linkedin: "#",
+      facebook: "#", },
     },
     {
       imageFileName: "team/2.jpg",
-      header: "Larry Parker",
-      subheader: "Mercadeo",
-      social: { twitter: "#", facebook: "#", medium: "#" },
+      header: "Ericka Arguedas",
+      subheader: "",
+      social: { linkedin: "#", facebook: "#"},
     },
     {
       imageFileName: "team/3.jpg",
-      header: "Diana Pertersen",
-      subheader: "Desarrollo",
-      social: { twitter: "#", facebook: "#", medium: "#" },
+      header: "Irene Mora",
+      subheader: "",
+      social: { linkedin: "#", facebook: "#" },
     },
   ]
 ---

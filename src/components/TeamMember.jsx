@@ -25,11 +25,11 @@ const TeamMember = ({
 
   return (
     <div className="team-member">
-      <Image
+      {/* <Image
         className="mx-auto circle rounded-circle"
         fileName={imageFileName}
         alt={imageAlt || header || subheader}
-      />
+      /> */}
       <h4>{header}</h4>
       <p className="text-muted">{subheader}</p>
       <div>

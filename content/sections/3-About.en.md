@@ -1,7 +1,7 @@
 ---
 anchor: "About"
 header: "About"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "Partes de Camión's Journey"
 timeline: [
   {
     imageFileName: "about/1.jpg",
@@ -12,19 +12,19 @@ timeline: [
   {
     imageFileName: "about/2.jpg",
     header: "March 2011",
-    subheader: "An Agency is Born",
+    subheader: "Our Business is Born",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
   },
   {
     imageFileName: "about/3.jpg",
     header: "December 2012",
-    subheader: "Transition to Full Service",
+    subheader: "Kenworth Representation",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
   },
   {
     imageFileName: "about/4.jpg",
     header: "July 2014",
-    subheader: "Phase Two Expansion",
+    subheader: "Today",
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
   },
   {
